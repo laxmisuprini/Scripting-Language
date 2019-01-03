@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHOPPING</title>
+</head>
+<body>
+  <h1>ITEMS</h1>
+  <form action="{{url_for('store')}}" method="POST" >
+  	<input type="number" name="tomato" min=0>TOMATO :Rs 5<br>
+  	<input type="number" name="milk" min=0>milk :Rs 20<br>
+  	<input type="number" name="juice" min=0>juice :Rs 30<br>
+  	<input type="number" name="spinach" min=0>spinach :Rs 10<br>
+  	<input value = "Add to Cart" type = "submit"/>
+  </form><br>
+  <a href="{{url_for('cart')}}"> View your Shopping Cart </a>
+
+
+</body>
+</html>
